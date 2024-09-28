@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SGPA to CGPA & Percentage Calculator
 
-## Getting Started
+This is a simple web app that helps users calculate their CGPA (Cumulative Grade Point Average) and percentage based on their semester-wise SGPA (Semester Grade Point Average). The app supports two methods of calculation and allows conversion between CGPA and percentage using different grading scales. (This was built to try out V0.dev and cursor.ai)
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Two calculation methods:**
+  - **Method 1:** Enter individual SGPAs for each semester.
+  - **Method 2:** Enter the total SGPA and the number of semesters.
+- **Grading scale options:**
+  - 4.0 scale
+  - 10.0 scale (most common in India)
+  - Custom scale support (coming soon)
+- **CGPA to percentage conversion:**
+  - Automatically converts CGPA to percentage based on the selected grading scale.
+  
+## Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Check out the live demo here: [SGPA to CGPA & Percentage Calculator](https://sgpa2cgpa.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To run this project locally, follow these steps:
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/mr-chandan/sgpa2cgpa.git
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navigate to the project directory:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   cd sgpa2cgpa
+   ```
 
-## Deploy on Vercel
+3. Install dependencies:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the app in your browser:
+
+   ```
+   http://localhost:3000
+   ```
+
+## Usage
+
+1. **Method 1:** Enter your SGPA for each semester and click the "Calculate CGPA" button.
+2. **Method 2:** Enter the total sum of your SGPA and the number of semesters.
+3. Select your grading scale (4.0, 10.0) to see both your CGPA and percentage.
+4. Use the "Reset" button to clear all inputs and start again.
+
+## Technologies Used
+
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Framer Motion** (for animations)
+- **Radix UI** (for UI components)
+
+## Contribution
+
+Contributions are welcome! Feel free to fork this repository, open issues, and submit pull requests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Feedback
+
+I'd love to hear your feedback! Feel free to open an issue or reach out via GitHub if you have any suggestions or find any bugs.
