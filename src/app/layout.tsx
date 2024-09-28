@@ -6,13 +6,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SGPA to CGPA Calculator | Convert SGPA to CGPA and Percentage",
-  description: "Easily convert your SGPA to CGPA and percentage using two methods: enter individual SGPAs or total SGPA with number of semesters. Supports multiple grading scales.",
-  keywords: "SGPA to CGPA, CGPA Calculator, SGPA Calculator, Grading Scale, CGPA to Percentage, Semester GPA, Cumulative GPA",
-  viewport: "width=device-width, initial-scale=1.0",
+  description:
+    "Easily convert your SGPA to CGPA and percentage using two methods: enter individual SGPAs or total SGPA with number of semesters. Supports multiple grading scales.",
+  keywords:
+    "SGPA to CGPA, CGPA Calculator, SGPA Calculator, Grading Scale, CGPA to Percentage, Semester GPA, Cumulative GPA",
   robots: "index, follow",
   openGraph: {
     title: "SGPA to CGPA Calculator",
-    description: "Convert your SGPA to CGPA and percentage with ease. Supports various grading scales and multiple methods for calculation.",
+    description:
+      "Convert your SGPA to CGPA and percentage with ease. Supports various grading scales and multiple methods for calculation.",
     url: "https://sgpa2cgpa.vercel.app/",
     siteName: "SGPA to CGPA Calculator",
     images: [
@@ -29,7 +31,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@YourTwitterHandle",
     title: "SGPA to CGPA Calculator",
-    description: "Easily calculate your CGPA and percentage from SGPA using our simple and effective tool.",
+    description:
+      "Easily calculate your CGPA and percentage from SGPA using our simple and effective tool.",
     images: [
       {
         url: "/homepage.png",
@@ -49,29 +52,44 @@ export default function RootLayout({
       <head>
         <meta charSet="UTF-8" />
         <meta name="theme-color" content="#ffffff" />
-        <meta name="author" content="SGPA to CGPA Calculator | Convert SGPA to CGPA and Percentage" />
-        <meta name="keywords" content="SGPA, CGPA, GPA calculator, SGPA to CGPA, GPA to percentage" />
-        <meta name="description" content="Convert SGPA to CGPA easily and view your percentage using our calculator with support for different grading scales." />
+        <meta
+          name="author"
+          content="SGPA to CGPA Calculator | Convert SGPA to CGPA and Percentage"
+        />
+        <meta
+          name="keywords"
+          content="SGPA, CGPA, GPA calculator, SGPA to CGPA, GPA to percentage"
+        />
+        <meta
+          name="description"
+          content="Convert SGPA to CGPA easily and view your percentage using our calculator with support for different grading scales."
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
+
         {/* Open Graph for social media */}
         <meta property="og:title" content="SGPA to CGPA Calculator" />
-        <meta property="og:description" content="Convert your SGPA to CGPA and percentage with ease. Supports various grading scales and methods for calculation." />
+        <meta
+          property="og:description"
+          content="Convert your SGPA to CGPA and percentage with ease. Supports various grading scales and methods for calculation."
+        />
         <meta property="og:url" content="https://sgpa2cgpa.vercel.app/" />
         <meta property="og:image" content="/homepage.png" />
         <meta property="og:type" content="website" />
-        
+
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="SGPA to CGPA Calculator" />
-        <meta name="twitter:description" content="Easily calculate your CGPA and percentage from SGPA using our tool." />
+        <meta
+          name="twitter:description"
+          content="Easily calculate your CGPA and percentage from SGPA using our tool."
+        />
         <meta name="twitter:image" content="/homepage.png" />
-        
+
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
-        
+
         {/* JSON-LD Structured Data for SEO */}
-        <script type="application/ld+json">
+        {/* <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebApplication",
@@ -91,11 +109,9 @@ export default function RootLayout({
               "name": "SGPA to CGPA Calculator | Convert SGPA to CGPA and Percentage"
             }
           })}
-        </script>
+        </script> */}
       </head>
-      <body className={`${inter.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
 }
